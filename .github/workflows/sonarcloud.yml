@@ -48,4 +48,4 @@ jobs:
             -Dsonar.projectKey=mohamed-rawash_docdoc-app\
             -Dsonar.sources=. \
             -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.exclusions=**/generated/**,**/*.g.dart,**/*.freezed.dart,test/**, build/**, android/**, ios/**, .dart_tool/**, .packages/**, .pub/**, .idea/**, .vscode/**, .github/**, .git/**, .metadata, .flutter-plugins, .flutter-plugins-dependencies, .flutter-plugins-dependencies.lock, .flutter-plugins-version, .flutter-plugins-version.lock, .flutter-plugins-dependencies.lock, .flutter-plugins-dependencies.lock, .flutter-plugins-version, .flutter-plugins-version.lock, .dart_tool/**, .packages/**, .pub/**, .idea/**, .vscode/**, .github/**, .git/**, .metadata, .flutter-plugins, .flutter-plugins-dependencies, .flutter-plugins-dependencies.lock, .flutter-plugins-version, .flutter-plugins-version.lock, .flutter-plugins-dependencies.lock, .flutter-plugins-dependencies.lock, .flutter-plugins-version, .flutter-plugins-version.lock
+            -Dsonar.exclusions=**/generated/**,**/*.g.dart,**/*.freezed.dart,test/**
