@@ -2,7 +2,8 @@ name: Build for Sonar
 on:
   push:
     branches:
-      - main
+      - development
+      - production
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
@@ -44,7 +45,7 @@ jobs:
           export PATH=$SONAR_SCANNER_HOME/bin:$PATH
           export SONAR_SCANNER_OPTS="-server"
           sonar-scanner \
-            -Dsonar.organization=your_organization \
-            -Dsonar.projectKey=your_project_key\
+            -Dsonar.organization=mohamed-rawash \
+            -Dsonar.projectKey=mohamed-rawash_docdoc-app\
             -Dsonar.sources=. \
             -Dsonar.host.url=https://sonarcloud.io

@@ -29,3 +29,9 @@ extension UserInputValidations on String {
   bool get hasSpecialCharacter => AppRegex.specialCharacter.hasMatch(this);
   bool get hasMinLength => AppRegex.minLength.hasMatch(this);
 }
+
+extension StringHelpers on String {
+  String capitalize() {
+    return "${this[0].toUpperCase()}${substring(1)}";
+  }
+}
