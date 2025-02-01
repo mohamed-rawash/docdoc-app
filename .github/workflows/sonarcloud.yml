@@ -2,7 +2,7 @@ name: Build for Sonar
 on:
   push:
     branches:
-      - main
+      - development
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
@@ -23,7 +23,6 @@ jobs:
       - name: Set Up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.24.3'
           channel: 'stable'
       #4 Install Dependencies
       - name: Install Dependencies
@@ -44,7 +43,8 @@ jobs:
           export PATH=$SONAR_SCANNER_HOME/bin:$PATH
           export SONAR_SCANNER_OPTS="-server"
           sonar-scanner \
-            -Dsonar.organization=your_organization \
-            -Dsonar.projectKey=your_project_key\
-            -Dsonar.sources=. \
-            -Dsonar.host.url=https://sonarcloud.io
+            -Dsonar.organization=mohamed-rawash \
+            -Dsonar.projectKey=mohamed-rawash_docdoc-app\
+            -Dsonar.sources=lib \
+            -Dsonar.host.url=https://sonarcloud.io \
+            -Dsonar.exclusions=**/generated/**,**/*.g.dart,**/*.freezed.dart,**/*.mocks.dart,test/** \
