@@ -47,5 +47,4 @@ jobs:
             -Dsonar.organization=mohamed-rawash \
             -Dsonar.projectKey=mohamed-rawash_docdoc-app\
             -Dsonar.sources=. \
-            -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.exclusions=**/generated/**,**/*.g.dart,**/*.freezed.dart,test/**
+            -Dsonar.host.url=https://sonarcloud.io
